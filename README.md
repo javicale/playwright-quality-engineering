@@ -1,5 +1,7 @@
 # Playwright Quality Engineering Framework
 
+[![Playwright Quality Gate](https://github.com/javicale/playwright-quality-engineering/actions/workflows/playwright.yml/badge.svg)](https://github.com/javicale/playwright-quality-engineering/actions/workflows/playwright.yml)
+
 A production-minded **Playwright + TypeScript** reference project for Quality Engineering portfolios and real-world automation design.
 
 This repository demonstrates how I structure automated validation around **maintainability, observability, evidence and CI feedback**, rather than treating automation as a collection of isolated scripts.
