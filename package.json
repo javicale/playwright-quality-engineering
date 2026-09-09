@@ -1,0 +1,19 @@
+{
+  "name": "javicale-playwright-quality-engineering",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Quality Engineering reference framework using Playwright and TypeScript",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test tests/api",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
