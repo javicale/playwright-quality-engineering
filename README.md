@@ -41,7 +41,7 @@ This repository demonstrates how I structure automated validation around **maint
 ## Local execution
 
 ```bash
-npm ci
+npm install
 npx playwright install --with-deps
 npm test
 ```
@@ -73,11 +73,11 @@ Failure diagnosis
 Release evidence
 ```
 
-See [`docs/TEST-STRATEGY.md`](docs/TEST-STRATEGY.md) for the rationale behind the test design.
+See [`docs/TEST-STRATEGY.md`](docs/TEST-STRATEGY.md) for the rationale behind the test design and [`docs/EVIDENCE.md`](docs/EVIDENCE.md) for the evidence standard.
 
 ## CI evidence
 
-The workflow executes the test suite on every push and pull request to `main`, then uploads the Playwright HTML report even when tests fail. This means a failed pipeline should still produce diagnostic evidence.
+The workflow executes the test suite on every push and pull request to `main`, then uploads the Playwright HTML report and raw test results even when tests fail. A failed pipeline should therefore still produce diagnostic evidence.
 
 ## Why Playwright
 
